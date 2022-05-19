@@ -12,7 +12,7 @@ app.use(cors());
 
 app.use('/api', contactRoutes.routes);
 
-// app.get('/', (req, res) => {
+/// app.get('/', (req, res) => {
 //     res.status(200).send(`Hello from the server side.`);
 // });
 
