@@ -24,4 +24,4 @@ app.use("/api", contactRoutes.routes);
 /// app.listen(config.port, ()=> {
 //     console.log(`The app is listening on port ${config.port}`)
 // })
-app.listen(process.env.port || 3000);
+app.listen(process.env.PORT || 3000);
