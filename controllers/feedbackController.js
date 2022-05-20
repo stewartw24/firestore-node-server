@@ -3,17 +3,17 @@
 const firebase = require('../db');
 const firestore = firebase.firestore();
 
-const addContact = async (req, res, next) => {
+const addFeedback = async (req, res, next) => {
     try {
         const data = req.body;
         req.body.date = new Date().toLocaleString();
-        await firestore.collection('contact').doc().set(data);
-        res.send('message received');
-    } catch (error) {
+        await firestore.collection('feedback').doc().set(data);
+        res.send('feedback received');
+    } catch(error) {
         res.status(404).send(error.message);
     }
 }
 
 module.exports = {
-    addContact
+    addFeedback
 }
