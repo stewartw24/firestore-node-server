@@ -11,7 +11,8 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: 'https://charming-boba-83a35f.netlify.app/',
+    origin: 'https://portfolio--charming-boba-83a35f.netlify.app',
+    credentials: true,
   }),
 );
 
