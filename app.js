@@ -15,6 +15,8 @@ app.use(
   }),
 );
 
+app.options('*', cors());
+
 app.use('/api', contactRoutes.routes);
 app.use('/api', feedbackRoutes.routes);
 
